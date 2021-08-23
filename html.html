@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head has the information about the webpage title, style, stylesheet, script (limited, its like parent)-->
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">  /*this how we should create link to connect the index.html and styles.css*/
+    <style>
+        
+    </style>
+</head>
+
+        <!-- Comment line
+        Actual code will go to the body. Almost all tags has openning and closing tages
+        </body> -> closing body tag
+        -->
+
+<body style="background-color: whitesmoke;">
+    <h1 style="color: blue;">Heading 1</h1>  <!--Here I add blue it means Inline and this is last update-->
+   <p id = "My-Info">
+       I live in  <b>Poland</b>  <br> <!--<br> is break-->
+       <i>Poland</i> is good place <br>
+       I am studying <u>html:)</u>  <br>
+       <b><i><u>TechPro</u></i></b>
+   </p>
+   
+    <h2>IMAGE</h2>
+    <img id="sun-flower"
+    src="https://cdn.britannica.com/84/73184-004-E5A450B5/Sunflower-field-Fargo-North-Dakota.jpg" alt="sunflower">
+    <hr> <!--horizontal line-->
+    
+    <h3 class="my-custom-style">TEXT LINK</h3> <!--I used class and name it-->
+    <a 
+        href="https://www.techproeducation.com/"
+        target="_blank">TechPro Education
+    </a> <!--adding text link-->
+
+
+    <h4 class="my-custom-style">IMAGE LINK</h4> <!--Whatever is styled in h3 we took the class name(or attribute) and pasted to other h4,h5 and all values in h3 passed to h4 and h5-->
+    <a 
+        href="https://www.google.com/"  target="_blank">
+        <img id="google_link" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google_logo">
+    </a> <!--adding image link-->
+    
+    
+    
+    <section class="list-section">
+    <h5 class="my-custom-style">LIST</h5> <!--Whatever is styled in h3 we took the class name(or attribute) and pasted to other h4,h5 and all values in h3 passed to h4 and h5-->
+    <ul style="list-style-type: square;"> <!--this is unordered list-->
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+        </ul>
+        <ol type="a">
+            <li>Honda</li>
+            <li>Ferrari</li>
+            <li>Tesla</li>
+        
+    </ol>
+    </section>
+
+    <p class="my-custom-style">This is paragpraph that I am using to style my-cutomer-style</p>
+    <h6 id="my-unique-id">===WEB TABLE===</h6>
+    
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>City</th>
+            <th>Phone</th>
+        </thead>
+        <tr>
+             <td>John</td>
+             <td>Dallas</td>
+             <td>1234</td>
+         </tr>   
+         <tr>
+             <td>Sam</td>
+             <td>LA</td>
+             <td>5678</td>
+         </tr>
+    </table>
+    <h6 class="my-custom-style">IFRAMES</h6>
+    <iframe id="frame" src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0"></iframe>
+   
+    <br>
+
+ <div id="form-div">
+    <h6 class="my-custom-style">----FORMS-----</h6>
+
+    <form>
+
+        <!--fieldset creates border around the form elements-->
+        <fieldset>
+            <!--legend creates a tag on the fieldset-->
+            <legend>User Information</legend>
+
+        <label style="font-size: 50px;" for="">Enter First Name</label><br><br>
+        <input type="TextBox" style="font-size: 50px;" placeholder="enter first name"><br>
+    
+        <label  style="font-size: 50px;" for="">Enter Last Name</label><br><br>
+        <input type="text"style="font-size: 50px;" value="enter last name"> <br><br>
+
+        <label  style="font-size: 50px;" for="">Enter Your Email</label><br>
+        <input type="email" style="font-size: 50px;"> <br><br>
+
+
+        <input type="submit" style="font-size: 50px;" value="SUBMIT!"> <br>
+
+        <label style="font-size: 50px;" for="">TEXT AREA</label><br>
+        <!--textarea tag is used to create larger area cols and rows is used to determine the number of visible character-->
+        <textarea  cols="30" rows="10"></textarea><br>
+        <!--use button tag to create a button-->
+        <button style= "font-size: 50px;"> SUBMIT!</button>
+
+    </fieldset>
+
+    </form>
+
+    <h6 class="my-custom-style">----Checkbox-----</h6>
+    <label for="">Chose from the menu : </label><br>
+    
+    <input type="checkbox">
+    <label style="font-size: 25px;" for="">Cheese</label><br>
+    <input type="checkbox">
+    <label style="font-size: 25px;" for="">Pepperoni</label><br>
+    <input type="checkbox">
+    <label style="font-size: 25px;" for="">Mushroom</label><br>
+    <input type="checkbox">
+    <label style="font-size: 25px;" for="">Meat</label>
+
+    <h6 class="my-custom-style">----Radio Button-----</h6>
+    <label for="">GENDER</label><br>
+
+    <input type="Radio" name="gender">
+    <label style="font-size: 25px;"for="">Male</label>
+
+    <input type="Radio" name="gender">
+    <label style="font-size: 25px;"for="">Female</label>
+
+    <input type="Radio" name="gender">
+    <label style="font-size: 25px;"for="">Other</label>
+
+</div>
+    
+    <h6 class="my-custom-style">----Dropdown--------</h6>
+   <form action="">
+        <label style="font-size: 25px;">Choose a model</label><br>
+        <select name="car-options" id="cars">
+            <option value="choose" selected>--Choose--</option>
+            <option value="tesla">Tesla</option>
+            <option value="bmw">BMW</option>
+            <option value="honda">Honda</option>
+            <option value="njsan">Nissan</option>
+            <option value="tofas">Tofas</option>
+        </select>
+   </form>
+
+
+   <h6 class="my-custom-style">----Dates------</h6>
+   <form action="">
+        <label style="font-size: 25px;">Choose appointment date</label><br><br>
+        <input type="date"><br><br>
+        <input type="submit">
+        <hr><br>
+
+        <label for="">Select appointment time</label><br>
+        <input type="time"><br><br>
+        <input type="submit"><br>
+        <hr><br>
+
+        <label style="font-size: 25px;">Choose appointment date and time</label><br><br>
+        <input type="datetime-local"><br><br>
+        <input type="submit"><br>
+        <hr><br>
+   </form>
+    
+   <h6 class="my-custom-style">----COLOR PICKER------</h6>
+   <form action="">
+        <label style="font-size: 25px;">Choose a color</label><br><br>
+        <input type="color">
+    </form>
+
+   <h6 class="my-custom-style">----FILE UPLOAD------</h6>
+   <form action="">
+        <input type="file"><br><br>
+        <input type="sumbit">
+    </form>
+
+    <h6 class="my-custom-style">----FILE UPLOAD------</h6>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rAYyOD3d8vU" 
+         title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen>
+    </iframe>
+
+
+    <h6 class="my-custom-style">----ALERTS------</h6>
+    <button onclick="alert('Warning!!! You clicked the button')" 
+            type="button" style="font-size: 50px;">Click me!
+    </button>
+
+
+</body>
+</html>
